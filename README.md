@@ -37,6 +37,8 @@ Initial models can achieve deceptively high accuracy by overfitting the training
 To ensure generalization and robustness, I tuned key hyperparameters (e.g., `max_depth`, `min_samples_leaf`) to strike a balance between bias and variance. This led to more realistic accuracy scores and reduced the risk of false predictions which is critical in medical applications like disease detection.
 While the original models appeared to achieve near-perfect accuracy, those results were specific to the training data and did not reflect true generalization. After tuning to address overfitting, the revised accuracy scores better represent how the models would perform on new, unseen data.
 
+In regard to the random state vaule of the model, this is an arbitrary vaule and any number can be used. 42 was used for reproducible results. While arbitrary, 42 is a common seed value in programming culture.
+
 ## Insights
 
 - Random Forest outperformed other models due to its ability to reduce variance and generalize well.
